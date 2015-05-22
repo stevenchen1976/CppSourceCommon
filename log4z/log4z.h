@@ -2,7 +2,7 @@
 * @file     log4z.h
 * @brief    log4z V2.4.0 更新日期2013.10.09
 * @details
-* @author   陈吉宏, wqvbjhc@gmail.com
+* @author   phata, wqvbjhc@gmail.com
 * @date     2014-02-24
 * @usage
 zsummer::log4z::ILog4zManager::GetInstance()->SetLoggerMonthdir(LOG4Z_MAIN_LOGGER_ID, true);
