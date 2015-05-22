@@ -13,7 +13,7 @@ packet.Start(0x01,0x02);
 
 空串（长度为0）的md5值为：d41d8cd98f00b204e9800998ecf8427e
 
-* @author   陈吉宏, wqvbjhc@gmail.com
+* @author   phata, wqvbjhc@gmail.com
 * @date     2014-05-21
 * @mod      2014-07-24 phata 添加GetUVError，PacketData两个公共函数. TCP Server Client会调用到
                              添加TCP编程使用到的回调函数定义
