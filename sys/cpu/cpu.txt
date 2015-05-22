@@ -1,0 +1,16 @@
+testccpuidc v1.02 (32bit)
+
+CPU Vendor:	GenuineIntel
+CPU Brand:	        Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+LFuncStd:	0000000Dh
+LFuncExt:	80000008h
+MMX: 1	// hw: 1
+SSE: 6	// hw: 6
+AVX: 0	// hw: 1
+SSE4A:	0
+AES:	1
+PCLMULQDQ:	1
+F16C:	1
+FMA:	0
+FMA4:	0
+XOP:	0

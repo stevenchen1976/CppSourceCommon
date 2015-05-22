@@ -1,0 +1,326 @@
+﻿testccpuid v1.02 (32bit)
+
+CCPUID.Vendor:	GenuineIntel
+CCPUID.BrandTrim:	Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+CCPUID.InfoCount:	29
+CCPUID.LFuncStd:	0000000Dh
+CCPUID.LFuncExt:	80000008h
+CCPUID.MMX:	1	// hw: 1
+CCPUID.SSE:	6	// hw: 6
+	SSE
+	SSE2
+	SSE3
+	SSSE3
+	SSE4.1
+	SSE4.2
+SSE4A:	0
+AES:	1
+PCLMULQDQ:	1
+CCPUID.AVX:	0	// hw: 1
+	AVX
+F16C:	1
+FMA:	0
+FMA4:	0
+XOP:	0
+== fields ==
+0x00000000[0]:	0000000D	756E6547	6C65746E	49656E69
+	EAX[31: 0]=LFuncStd:	0xD	(13)	// largest standard function.
+	Vendor:	GenuineIntel
+0x00000001[0]:	000306A9	02100800	77BAE3FF	BFEBFBFF
+	EAX[ 3: 0]=Stepping:	0x9	(9)	// processor stepping.
+	EAX[ 7: 4]=BaseModel:	0xA	(10)	// base processor model.
+	EAX[11: 8]=BaseFamily:	0x6	(6)	// base processor family.
+	EAX[13:12]=ProcessorType:	0x0	(0)	// processor type.
+	EAX[19:16]=ExtModel:	0x3	(3)	// processor extended model.
+	EAX[27:20]=ExtFamily:	0x0	(0)	// processor extended family.
+	EBX[ 7: 0]=BrandId8:	0x0	(0)	// 8-bit brand ID.
+	EBX[15: 8]=CLFlush:	0x8	(8)	// CLFLUSH line size. (*8)
+	EBX[23:16]=MaxApicId:	0x10	(16)	// Maximum number of addressable IDs for logical processors in this physical package.
+	EBX[31:24]=ApicId:	0x2	(2)	// Initial local APIC physical ID(8-bit).
+	ECX[    0]=SSE3:	0x1	(1)	// Streaming SIMD Extensions 3.
+	ECX[    1]=PCLMULQDQ:	0x1	(1)	// PCLMULQDQ instruction.
+	ECX[    2]=DTES64:	0x1	(1)	// 64-bit DS Area.
+	ECX[    3]=MONITOR:	0x1	(1)	// MONITOR/MWAIT instructions.
+	ECX[    4]=DS_CPL:	0x1	(1)	// CPL Qualified Debug Store.
+	ECX[    5]=VMX:	0x1	(1)	// Virtual Machine Extensions.
+	ECX[    6]=SMX:	0x1	(1)	// Safer Mode Extensions.
+	ECX[    7]=EIST:	0x1	(1)	// Enhanced Intel SpeedStep technology.
+	ECX[    8]=TM2:	0x1	(1)	// Thermal Monitor 2.
+	ECX[    9]=SSSE3:	0x1	(1)	// Supplemental Streaming SIMD Extensions 3 (SSSE3).
+	ECX[   10]=CNXT_ID:	0x0	(0)	// L1 Context ID.
+	ECX[   12]=FMA:	0x0	(0)	// supports FMA extensions using YMM state.
+	ECX[   13]=CX16:	0x1	(1)	// CMPXCHG16B instruction.
+	ECX[   14]=xTPR:	0x1	(1)	// xTPR Update Control. Can disable sending Task Priority messages.
+	ECX[   15]=PDCM:	0x1	(1)	// Perfmon and Debug Capability.
+	ECX[   17]=PCID:	0x1	(1)	// Process Context Identifiers.
+	ECX[   18]=DCA:	0x0	(0)	// Direct Cache Access.
+	ECX[   19]=SSE41:	0x1	(1)	// SSE4.1 instructions.
+	ECX[   20]=SSE42:	0x1	(1)	// SSE4.2 instructions.
+	ECX[   21]=x2APIC:	0x1	(1)	// Extended xAPIC Support.
+	ECX[   22]=MOVBE:	0x0	(0)	// MOVBE Instruction.
+	ECX[   23]=POPCNT:	0x1	(1)	// POPCNT instruction.
+	ECX[   24]=TSC_DEADLINE:	0x1	(1)	// Local APIC timer supports one-shot operation using a TSC deadline value.
+	ECX[   25]=AES:	0x1	(1)	// Advanced Encryption Standard (AES) Instructions.
+	ECX[   26]=XSAVE:	0x1	(1)	// XSAVE (and related) instructions are supported by hardware.
+	ECX[   27]=OSXSAVE:	0x0	(0)	// XSAVE (and related) instructions are enabled.
+	ECX[   28]=AVX:	0x1	(1)	// AVX instructions.
+	ECX[   29]=F16C:	0x1	(1)	// half-precision convert instruction support.
+	ECX[   30]=RDRAND:	0x1	(1)	// RDRAND instruction.
+	EDX[    0]=FPU:	0x1	(1)	// Floating Point Unit On-Chip.
+	EDX[    1]=VME:	0x1	(1)	// Virtual 8086 Mode Enhancements.
+	EDX[    2]=DE:	0x1	(1)	// Debugging Extensions.
+	EDX[    3]=PSE:	0x1	(1)	// Page Size Extension.
+	EDX[    4]=TSC:	0x1	(1)	// Time Stamp Counter.
+	EDX[    5]=MSR:	0x1	(1)	// Model Specific Registers RDMSR and WRMSR Instructions.
+	EDX[    6]=PAE:	0x1	(1)	// Physical Address Extension.
+	EDX[    7]=MCE:	0x1	(1)	// Machine Check Exception.
+	EDX[    8]=CX8:	0x1	(1)	// CMPXCHG8B instruction.
+	EDX[    9]=APIC:	0x1	(1)	// APIC(Advanced Programmable Interrupt Controller) On-Chip.
+	EDX[   11]=SEP:	0x1	(1)	// Fast System Call instructions, SYSENTER and SYSEXIT.
+	EDX[   12]=MTRR:	0x1	(1)	// Memory Type Range Registers.
+	EDX[   13]=PGE:	0x1	(1)	// Page Global Enable.
+	EDX[   14]=MCA:	0x1	(1)	// Machine-Check Architecture.
+	EDX[   15]=CMOV:	0x1	(1)	// Conditional Move Instructions.
+	EDX[   16]=PAT:	0x1	(1)	// Page Attribute Table.
+	EDX[   17]=PSE36:	0x1	(1)	// 36-Bit Page Size Extension.
+	EDX[   18]=PSN:	0x0	(0)	// Processor Serial Number.
+	EDX[   19]=CLFSH:	0x1	(1)	// CLFLUSH Instruction.
+	EDX[   21]=DS:	0x1	(1)	// Debug Store.
+	EDX[   22]=ACPI:	0x1	(1)	// Thermal Monitor and Software Controlled Clock Facilities.
+	EDX[   23]=MMX:	0x1	(1)	// MMX instructions.
+	EDX[   24]=FXSR:	0x1	(1)	// FXSAVE and FXRSTOR instructions.
+	EDX[   25]=SSE:	0x1	(1)	// Streaming SIMD Extensions.
+	EDX[   26]=SSE2:	0x1	(1)	// Streaming SIMD Extensions 2.
+	EDX[   27]=SS:	0x1	(1)	// Self Snoop.
+	EDX[   28]=HTT:	0x1	(1)	// Max APIC IDs reserved field is Valid.
+	EDX[   29]=TM:	0x1	(1)	// Thermal Monitor.
+	EDX[   31]=PBE:	0x1	(1)	// Pending Break Enable.
+0x00000002[0]:	76035A01	00F0B0FF	00000000	00CA0000
+	0x5A:	Data TLB: 4 KByte and 4 MByte pages, 64 entries
+	0x03:	Data TLB: 4 KByte pages, 4-way set associative, 64 entries
+	0x76:	Instruction TLB: 2M/4M pages, fully associative, 8 entries
+	0xFF:	CPUID leaf 2 does not report cache descriptor information, use CPUID leaf 4 to query cache parameters
+	0xB0:	Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries
+	0xF0:	64-Byte prefetching
+	0xCA:	Shared 2nd-Level TLB: 4 KByte pages, 4-way associative, 512 entries
+0x00000003[0]:	00000000	00000000	00000000	00000000
+0x00000004[0]:	1C004121	01C0003F	0000003F	00000000
+	EAX[ 4: 0]=Cache_Type:	0x1	(1)	// Cache Type (0=Null, 1=Data, 2=Instruction, 3=Unified).
+	EAX[ 7: 5]=Cache_Level:	0x1	(1)	// Cache Level (Starts at 1).
+	EAX[    8]=CACHE_SI:	0x1	(1)	// Self Initializing cache level.
+	EAX[    9]=CACHE_FA:	0x0	(0)	// Fully Associative cache.
+	EAX[25:14]=MaxApicIdShare:	0x1	(1)	// Maximum number of addressable IDs for logical processors sharing this cache (plus 1 encoding).
+	EAX[31:26]=MaxApicIdCore:	0x7	(7)	// Maximum number of addressable IDs for processor cores in the physical package (plus 1 encoding).
+	EBX[11: 0]=Cache_LineSize:	0x3F	(63)	// System Coherency Line Size (plus 1 encoding).
+	EBX[21:12]=Cache_Partitions:	0x0	(0)	// Physical Line partitions (plus 1 encoding).
+	EBX[31:22]=Cache_Ways:	0x7	(7)	// Ways of Associativity (plus 1 encoding).
+	ECX[31: 0]=Cache_Sets:	0x3F	(63)	// Number of Sets (plus 1 encoding).
+	EDX[    0]=CACHE_INVD:	0x0	(0)	// WBINVD/INVD behavior on lower level caches.
+	EDX[    1]=CACHE_INCLUSIVENESS:	0x0	(0)	// Cache is inclusive of lower cache levels.
+	EDX[    2]=CACHE_COMPLEXINDEX:	0x0	(0)	// Complex Cache Indexing.
+0x00000004[1]:	1C004122	01C0003F	0000003F	00000000
+	EAX[ 4: 0]=Cache_Type:	0x2	(2)	// Cache Type (0=Null, 1=Data, 2=Instruction, 3=Unified).
+	EAX[ 7: 5]=Cache_Level:	0x1	(1)	// Cache Level (Starts at 1).
+	EAX[    8]=CACHE_SI:	0x1	(1)	// Self Initializing cache level.
+	EAX[    9]=CACHE_FA:	0x0	(0)	// Fully Associative cache.
+	EAX[25:14]=MaxApicIdShare:	0x1	(1)	// Maximum number of addressable IDs for logical processors sharing this cache (plus 1 encoding).
+	EAX[31:26]=MaxApicIdCore:	0x7	(7)	// Maximum number of addressable IDs for processor cores in the physical package (plus 1 encoding).
+	EBX[11: 0]=Cache_LineSize:	0x3F	(63)	// System Coherency Line Size (plus 1 encoding).
+	EBX[21:12]=Cache_Partitions:	0x0	(0)	// Physical Line partitions (plus 1 encoding).
+	EBX[31:22]=Cache_Ways:	0x7	(7)	// Ways of Associativity (plus 1 encoding).
+	ECX[31: 0]=Cache_Sets:	0x3F	(63)	// Number of Sets (plus 1 encoding).
+	EDX[    0]=CACHE_INVD:	0x0	(0)	// WBINVD/INVD behavior on lower level caches.
+	EDX[    1]=CACHE_INCLUSIVENESS:	0x0	(0)	// Cache is inclusive of lower cache levels.
+	EDX[    2]=CACHE_COMPLEXINDEX:	0x0	(0)	// Complex Cache Indexing.
+0x00000004[2]:	1C004143	01C0003F	000001FF	00000000
+	EAX[ 4: 0]=Cache_Type:	0x3	(3)	// Cache Type (0=Null, 1=Data, 2=Instruction, 3=Unified).
+	EAX[ 7: 5]=Cache_Level:	0x2	(2)	// Cache Level (Starts at 1).
+	EAX[    8]=CACHE_SI:	0x1	(1)	// Self Initializing cache level.
+	EAX[    9]=CACHE_FA:	0x0	(0)	// Fully Associative cache.
+	EAX[25:14]=MaxApicIdShare:	0x1	(1)	// Maximum number of addressable IDs for logical processors sharing this cache (plus 1 encoding).
+	EAX[31:26]=MaxApicIdCore:	0x7	(7)	// Maximum number of addressable IDs for processor cores in the physical package (plus 1 encoding).
+	EBX[11: 0]=Cache_LineSize:	0x3F	(63)	// System Coherency Line Size (plus 1 encoding).
+	EBX[21:12]=Cache_Partitions:	0x0	(0)	// Physical Line partitions (plus 1 encoding).
+	EBX[31:22]=Cache_Ways:	0x7	(7)	// Ways of Associativity (plus 1 encoding).
+	ECX[31: 0]=Cache_Sets:	0x1FF	(511)	// Number of Sets (plus 1 encoding).
+	EDX[    0]=CACHE_INVD:	0x0	(0)	// WBINVD/INVD behavior on lower level caches.
+	EDX[    1]=CACHE_INCLUSIVENESS:	0x0	(0)	// Cache is inclusive of lower cache levels.
+	EDX[    2]=CACHE_COMPLEXINDEX:	0x0	(0)	// Complex Cache Indexing.
+0x00000004[3]:	1C03C163	02C0003F	00001FFF	00000006
+	EAX[ 4: 0]=Cache_Type:	0x3	(3)	// Cache Type (0=Null, 1=Data, 2=Instruction, 3=Unified).
+	EAX[ 7: 5]=Cache_Level:	0x3	(3)	// Cache Level (Starts at 1).
+	EAX[    8]=CACHE_SI:	0x1	(1)	// Self Initializing cache level.
+	EAX[    9]=CACHE_FA:	0x0	(0)	// Fully Associative cache.
+	EAX[25:14]=MaxApicIdShare:	0xF	(15)	// Maximum number of addressable IDs for logical processors sharing this cache (plus 1 encoding).
+	EAX[31:26]=MaxApicIdCore:	0x7	(7)	// Maximum number of addressable IDs for processor cores in the physical package (plus 1 encoding).
+	EBX[11: 0]=Cache_LineSize:	0x3F	(63)	// System Coherency Line Size (plus 1 encoding).
+	EBX[21:12]=Cache_Partitions:	0x0	(0)	// Physical Line partitions (plus 1 encoding).
+	EBX[31:22]=Cache_Ways:	0xB	(11)	// Ways of Associativity (plus 1 encoding).
+	ECX[31: 0]=Cache_Sets:	0x1FFF	(8191)	// Number of Sets (plus 1 encoding).
+	EDX[    0]=CACHE_INVD:	0x0	(0)	// WBINVD/INVD behavior on lower level caches.
+	EDX[    1]=CACHE_INCLUSIVENESS:	0x1	(1)	// Cache is inclusive of lower cache levels.
+	EDX[    2]=CACHE_COMPLEXINDEX:	0x1	(1)	// Complex Cache Indexing.
+0x00000005[0]:	00000040	00000040	00000003	00001120
+	EAX[15: 0]=MonLineSizeMin:	0x40	(64)	// Smallest monitor line size in bytes.
+	EBX[15: 0]=MonLineSizeMax:	0x40	(64)	// Largest monitor-line size in bytes.
+	ECX[    0]=EMX:	0x1	(1)	// Enumerate MONITOR/MWAIT extensions.
+	ECX[    1]=IBE:	0x1	(1)	// Interrupt Break-Event.
+	EDX[ 3: 0]=MWAIT_Number_C0:	0x0	(0)	// Number of C0 sub C-states supported using MWAIT.
+	EDX[ 7: 4]=MWAIT_Number_C1:	0x2	(2)	// Number of C1 sub C-states supported using MWAIT.
+	EDX[11: 8]=MWAIT_Number_C2:	0x1	(1)	// Number of C2 sub C-states supported using MWAIT.
+	EDX[15:12]=MWAIT_Number_C3:	0x1	(1)	// Number of C3 sub C-states supported using MWAIT.
+	EDX[19:16]=MWAIT_Number_C4:	0x0	(0)	// Number of C4 sub C-states supported using MWAIT.
+0x00000006[0]:	00000077	00000002	00000009	00000000
+	EAX[    0]=DTS:	0x1	(1)	// Digital Thermal Sensor.
+	EAX[    1]=TURBO_BOOST:	0x1	(1)	// Intel Turbo Boost Technology.
+	EAX[    2]=ARAT:	0x1	(1)	// Always Running APIC Timer.
+	EAX[    4]=PLN:	0x1	(1)	// Power Limit Notification.
+	EAX[    5]=ECMD:	0x1	(1)	// Extended Clock Modulation Duty.
+	EAX[    6]=PTM:	0x1	(1)	// Package Thermal Management.
+	EBX[ 3: 0]=DTS_ITs:	0x2	(2)	// Number of Interrupt Thresholds in Digital Thermal Sensor.
+	ECX[    0]=PERF:	0x1	(1)	// Hardware Coordination Feedback Capability.
+	ECX[    1]=ACNT2:	0x0	(0)	// ACNT2 Capability.
+	ECX[    3]=ENERGY_PERF_BIAS:	0x1	(1)	// Performance-Energy Bias capability.
+0x00000007[0]:	00000000	00000281	00000000	00000000
+	EAX[31: 0]=Max07Subleaf:	0x0	(0)	// Reports the maximum supported leaf 7 sub-leaf.
+	EBX[    0]=FSGSBASE:	0x1	(1)	// Supports RDFSBASE/RDGSBASE/WRFSBASE/WRGSBASE.
+	EBX[    1]=TSC_ADJUST:	0x0	(0)	// IA32_TSC_ADJUST MSR is supported if 1.
+	EBX[    3]=BMI1:	0x0	(0)	// The first group of advanced bit manipulation extensions (ANDN, BEXTR, BLSI, BLSMK, BLSR, TZCNT).
+	EBX[    4]=HLE:	0x0	(0)	// Hardware Lock Elision.
+	EBX[    5]=AVX2:	0x0	(0)	// AVX2 instructions.
+	EBX[    7]=SMEP:	0x1	(1)	// Supervisor Mode Execution Protection.
+	EBX[    8]=BMI2:	0x0	(0)	// The second group of advanced bit manipulation extensions (BZHI, MULX, PDEP, PEXT, RORX, SARX, SHLX, SHRX).
+	EBX[    9]=ERMS:	0x1	(1)	// Supports Enhanced REP MOVSB/STOSB.
+	EBX[   10]=INVPCID:	0x0	(0)	// Invalidate Processor Context ID.
+	EBX[   11]=RTM:	0x0	(0)	// Restricted Transactional Memory.
+	EBX[   18]=RDSEED:	0x0	(0)	// RDSEED instruction.
+	EBX[   19]=ADX:	0x0	(0)	// ADCX and ADOX instructions.
+	EBX[   20]=SMAP:	0x0	(0)	// Supervisor Mode Access Prevention.
+0x00000008[0]:	00000000	00000000	00000000	00000000
+0x00000009[0]:	00000000	00000000	00000000	00000000
+	EAX[31: 0]=PLATFORM_DCA_CAP:	0x0	(0)	// Value of PLATFORM_DCA_CAP MSR Bits [31:0] (Offset 1F8h).
+0x0000000A[0]:	07300803	00000000	00000000	00000603
+	EAX[ 7: 0]=APM_Version:	0x3	(3)	// Version ID of architectural performance monitoring.
+	EAX[15: 8]=APM_Counters:	0x8	(8)	// Number of general-purpose performance monitoring counters per logical processor.
+	EAX[23:16]=APM_Bits:	0x30	(48)	// Bit width of general-purpose, performance monitoring counters.
+	EAX[31:24]=APM_Length:	0x7	(7)	// Length of EBX bit vector to enumerate architectural performance monitoring events.
+	EBX[    0]=APM_CC:	0x0	(0)	// Core cycle event not available if 1.
+	EBX[    1]=APM_IR:	0x0	(0)	// Instruction retired event not available if 1.
+	EBX[    2]=APM_RC:	0x0	(0)	// Reference cycles event not available if 1.
+	EBX[    3]=APM_LLCR:	0x0	(0)	// Last-level cache reference event not available if 1.
+	EBX[    4]=APM_LLCM:	0x0	(0)	// Last-level cache misses event not available if 1.
+	EBX[    5]=APM_BIR:	0x0	(0)	// Branch instruction retired event not available if 1.
+	EBX[    6]=APM_BMR:	0x0	(0)	// Branch mispredict retired event not available if 1.
+	EDX[ 4: 0]=APM_FC_Number:	0x3	(3)	// Number of fixed-function performance counters.
+	EDX[12: 5]=APM_FC_Bits:	0x30	(48)	// Bit width of fixed-function performance counters.
+0x0000000B[0]:	00000001	00000001	00000100	00000002
+	EAX[ 4: 0]=Topology_Bits:	0x1	(1)	// Number of bits to shift right on x2APIC ID to get a unique topology ID of the next level type.
+	EBX[15: 0]=Topology_Number:	0x1	(1)	// Number of factory-configured logical processors at this level.
+	ECX[ 7: 0]=Topology_Level:	0x0	(0)	// Level number. Same value in ECX input.
+	ECX[15: 8]=Topology_Type:	0x1	(1)	// Level Type (0=Invalid, 1=Thread, 2=Core).
+	EDX[31: 0]=X2APICID:	0x2	(2)	// x2APIC ID.
+0x0000000B[1]:	00000004	00000004	00000201	00000002
+	EAX[ 4: 0]=Topology_Bits:	0x4	(4)	// Number of bits to shift right on x2APIC ID to get a unique topology ID of the next level type.
+	EBX[15: 0]=Topology_Number:	0x4	(4)	// Number of factory-configured logical processors at this level.
+	ECX[ 7: 0]=Topology_Level:	0x1	(1)	// Level number. Same value in ECX input.
+	ECX[15: 8]=Topology_Type:	0x2	(2)	// Level Type (0=Invalid, 1=Thread, 2=Core).
+	EDX[31: 0]=X2APICID:	0x2	(2)	// x2APIC ID.
+0x0000000C[0]:	00000000	00000000	00000000	00000000
+0x0000000D[0]:	00000007	00000240	00000340	00000000
+	EAX[31: 0]=XFeatureSupportedMaskLo:	0x7	(7)	// The lower 32 bits of XCR0(XFEATURE_ENABLED_MASK register).
+	EBX[31: 0]=XFeatureEnabledSizeMax:	0x240	(576)	// Size in bytes of XSAVE/XRSTOR area for the currently enabled features in XCR0.
+	ECX[31: 0]=XFeatureSupportedSizeMax:	0x340	(832)	// Size in bytes of XSAVE/XRSTOR area for all features that the core supports.
+	EDX[31: 0]=XFeatureSupportedMaskHi:	0x0	(0)	// The upper 32 bits of XCR0(XFEATURE_ENABLED_MASK register).
+0x0000000D[1]:	00000001	00000000	00000000	00000000
+	EAX[    0]=XSAVEOPT:	0x1	(1)	// XSAVEOPT is available.
+0x0000000D[2]:	00000100	00000240	00000000	00000000
+	EAX[31: 0]=YmmSaveStateSize:	0x100	(256)	// YMM save state byte size.
+	EBX[31: 0]=YmmSaveStateOffset:	0x240	(576)	// YMM save state byte offset.
+0x80000000[0]:	80000008	00000000	00000000	00000000
+	EAX[31: 0]=LFuncExt:	0x80000008	(2147483656)	// Largest extended function.
+0x80000001[0]:	00000000	00000000	00000001	28100000
+	EBX[15: 0]=BrandId16:	0x0	(0)	// 16-bit Brand ID.
+	EBX[31:28]=PkgType:	0x0	(0)	// Package type (Family[7:0] >= 10h).
+	ECX[    0]=LahfSahf:	0x1	(1)	// LAHF and SAHF instruction support in 64-bit mode.
+	ECX[    1]=CmpLegacy:	0x0	(0)	// core multi-processing legacy mode.
+	ECX[    2]=SVM:	0x0	(0)	// secure virtual machine.
+	ECX[    3]=ExtApicSpace:	0x0	(0)	// extended APIC space.
+	ECX[    4]=AltMovCr8:	0x0	(0)	// LOCK MOV CR0 means MOV CR8.
+	ECX[    5]=ABM:	0x0	(0)	// advanced bit manipulation (LZCNT).
+	ECX[    6]=SSE4A:	0x0	(0)	// SSE4A instructions.
+	ECX[    7]=MisAlignSse:	0x0	(0)	// misaligned SSE mode.
+	ECX[    8]=3DNowPrefetch:	0x0	(0)	// PREFETCH and PREFETCHW instruction support.
+	ECX[    9]=OSVW:	0x0	(0)	// OS visible workaround.
+	ECX[   10]=IBS:	0x0	(0)	// instruction based sampling.
+	ECX[   11]=XOP:	0x0	(0)	// extended operation support.
+	ECX[   12]=SKINIT:	0x0	(0)	// SKINIT and STGI are supported, independent of the value of MSRC000_0080[SVME].
+	ECX[   13]=WDT:	0x0	(0)	// watchdog timer support.
+	ECX[   15]=LWP:	0x0	(0)	// lightweight profiling support.
+	ECX[   16]=FMA4:	0x0	(0)	// 4-operand FMA instruction support.
+	ECX[   19]=BIT_NODEID:	0x0	(0)	// Indicates support for MSRC001_100C[NodeId, NodesPerProcessor].
+	ECX[   21]=TBM:	0x0	(0)	// Trailing bit manipulation instruction support.
+	ECX[   22]=TopologyExtensions:	0x0	(0)	// Topology extensions support.
+	EDX[   11]=SYSCALL:	0x0	(0)	// SYSCALL and SYSRET instructions.
+	EDX[   20]=XD:	0x1	(1)	// Execution Disable Bit.
+	EDX[   22]=MmxExt:	0x0	(0)	// AMD extensions to MMX instructions.
+	EDX[   25]=FFXSR:	0x0	(0)	// FXSAVE and FXRSTOR instruction optimizations.
+	EDX[   26]=Page1GB:	0x0	(0)	// 1-GB large page support.
+	EDX[   27]=RDTSCP:	0x1	(1)	// RDTSCP and TSC_AUX.
+	EDX[   29]=LM:	0x1	(1)	// 64-bit long mode.(x86-64)
+	EDX[   30]=3DNowExt:	0x0	(0)	// AMD extensions to 3DNow! instructions.
+	EDX[   31]=3DNow:	0x0	(0)	// 3DNow! instructions.
+0x80000002[0]:	20202020	20202020	65746E49	2952286C
+0x80000003[0]:	726F4320	4D542865	35692029	3734332D
+0x80000004[0]:	50432030	20402055	30322E33	007A4847
+	Brand:	        Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+0x80000005[0]:	00000000	00000000	00000000	00000000
+	EAX[ 7: 0]=L1ITlb2and4MSize:	0x0	(0)	// Instruction TLB number of entries for 2-MB and 4-MB pages.
+	EAX[15: 8]=L1ITlb2and4MAssoc:	0x0	(0)	// Instruction TLB associativity for 2-MB and 4-MB pages.
+	EAX[23:16]=L1DTlb2and4MSize:	0x0	(0)	// Data TLB number of entries for 2-MB and 4-MB pages.
+	EAX[31:24]=L1DTlb2and4MAssoc:	0x0	(0)	// Data TLB associativity for 2-MB and 4-MB pages.
+	EBX[ 7: 0]=L1ITlb4KSize:	0x0	(0)	// Instruction TLB number of entries for 4 KB pages.
+	EBX[15: 8]=L1ITlb4KAssoc:	0x0	(0)	// Instruction TLB associativity for 4KB pages.
+	EBX[23:16]=L1DTlb4KSize:	0x0	(0)	// Data TLB number of entries for 4 KB pages.
+	EBX[31:24]=L1DTlb4KAssoc:	0x0	(0)	// Data TLB associativity for 4 KB pages.
+	ECX[ 7: 0]=L1DcLineSize:	0x0	(0)	// L1 data cache line size in bytes.
+	ECX[15: 8]=L1DcLinesPerTag:	0x0	(0)	// L1 data cache lines per tag.
+	ECX[23:16]=L1DcAssoc:	0x0	(0)	// L1 data cache associativity.
+	ECX[31:24]=L1DcSize:	0x0	(0)	// L1 data cache size in KB.
+	EDX[ 7: 0]=L1IcLineSize:	0x0	(0)	// L1 instruction cache line size in bytes
+	EDX[15: 8]=L1IcLinesPerTag:	0x0	(0)	// L1 instruction cache lines per tag.
+	EDX[23:16]=L1IcAssoc:	0x0	(0)	// L1 instruction cache associativity.
+	EDX[31:24]=L1IcSize:	0x0	(0)	// L1 instruction cache size KB.
+0x80000006[0]:	00000000	00000000	01006040	00000000
+	EAX[11: 0]=L2ITlb2and4MSize:	0x0	(0)	// L2 instruction TLB number of entries for 2 MB and 4 MB pages.
+	EAX[15:12]=L2ITlb2and4MAssoc:	0x0	(0)	// L2 instruction TLB associativity for 2 MB and 4 MB pages.
+	EAX[27:16]=L2DTlb2and4MSize:	0x0	(0)	// L2 data TLB number of entries for 2 MB and 4 MB pages.
+	EAX[31:28]=L2DTlb2and4MAssoc:	0x0	(0)	// L2 data TLB associativity for 2 MB and 4 MB pages.
+	EBX[11: 0]=L2ITlb4KSize:	0x0	(0)	// L2 instruction TLB number of entries for 4 KB pages.
+	EBX[15:12]=L2ITlb4KAssoc:	0x0	(0)	// L2 instruction TLB associativity for 4 KB pages.
+	EBX[27:16]=L2DTlb4KSize:	0x0	(0)	// L2 data TLB number of entries for 4 KB pages.
+	EBX[31:28]=L2DTlb4KAssoc:	0x0	(0)	// L2 data TLB associativity for 4 KB pages.
+	ECX[ 7: 0]=L2LineSize:	0x40	(64)	// L2 cache line size in bytes.
+	ECX[11: 8]=L2LinesPerTag:	0x0	(0)	// L2 cache lines per tag.
+	ECX[15:12]=L2Assoc:	0x6	(6)	// L2 cache associativity.
+	ECX[31:16]=L2Size:	0x100	(256)	// L2 cache size in KB.
+	EDX[ 7: 0]=L3LineSize:	0x0	(0)	// L3 cache line size in bytes.
+	EDX[11: 8]=L3LinesPerTag:	0x0	(0)	// L3 cache lines per tag.
+	EDX[15:12]=L3Assoc:	0x0	(0)	// L3 cache associativity.
+	EDX[31:18]=L3Size:	0x0	(0)	// L3 cache size.
+0x80000007[0]:	00000000	00000000	00000000	00000100
+	EDX[    0]=TS:	0x0	(0)	// Temperature sensor.
+	EDX[    1]=FID:	0x0	(0)	// Frequency ID control.
+	EDX[    2]=VID:	0x0	(0)	// Voltage ID control.
+	EDX[    3]=TTP:	0x0	(0)	// THERMTRIP.
+	EDX[    4]=HTC:	0x0	(0)	// TM: Hardware thermal control (HTC).
+	EDX[    6]=100MHzSteps:	0x0	(0)	// 100 MHz multiplier Control.
+	EDX[    7]=HwPstate:	0x0	(0)	// Hardware P-state control.
+	EDX[    8]=TscInvariant:	0x1	(1)	// TSC invariant.
+	EDX[    9]=CPB:	0x0	(0)	// Core performance boost.
+	EDX[   10]=EffFreqRO:	0x0	(0)	// Read-only effective frequency interface.
+0x80000008[0]:	00003024	00000000	00000000	00000000
+	EAX[ 7: 0]=PhysAddrSize:	0x24	(36)	// Maximum physical byte address size in bits.
+	EAX[15: 8]=LinAddrSize:	0x30	(48)	// Maximum linear byte address size in bits.
+	EAX[23:16]=GuestPhysAddrSize:	0x0	(0)	// Maximum guest physical byte address size in bits.
+	ECX[ 7: 0]=NC:	0x0	(0)	// number of physical cores - 1.
+	ECX[15:12]=ApicIdCoreIdSize:	0x0	(0)	// APIC ID size. The number of bits in the initial APIC20[ApicId] value that indicate core ID within a processor.
